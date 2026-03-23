@@ -112,3 +112,19 @@ h1 {
   color: #ccc;
   white-space: nowrap;
 }
+
+#mute-btn {
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #eee;
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+#mute-btn:hover {
+  border-color: #666;
+}
