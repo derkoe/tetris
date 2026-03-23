@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game-wrapper">
+        <div id="sidebar-left">
+          <h1>TETRIS</h1>
+          <div class="info-box">
+            <div class="info-label">SCORE</div>
+            <div class="info-value" id="score">0</div>
+          </div>
+          <div class="info-box">
+            <div class="info-label">LEVEL</div>
+            <div class="info-value" id="level">1</div>
+          </div>
+          <div class="info-box">
+            <div class="info-label">LINES</div>
+            <div class="info-value" id="lines">0</div>
+          </div>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+
+        <div id="sidebar-right">
+          <div class="info-box">
+            <div class="info-label">NEXT</div>
+            <canvas id="next-canvas"></canvas>
+          </div>
+          <div class="controls">
+            <div class="controls-title">CONTROLS</div>
+            <div class="control-row"><span class="key">←→</span> Move</div>
+            <div class="control-row"><span class="key">↑ / X</span> Rotate</div>
+            <div class="control-row"><span class="key">↓</span> Soft drop</div>
+            <div class="control-row"><span class="key">Space</span> Hard drop</div>
+            <div class="control-row"><span class="key">P / Esc</span> Pause</div>
+            <div class="control-row"><span class="key">R</span> Restart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
